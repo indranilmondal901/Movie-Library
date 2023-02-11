@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Library</title>
+</head>
+
+<body>
+    <div>
+        <h1>Movie Library</h1>
+    </div>
+
+    <label for="search-by">Search By:</label>
+    <select id="search-by" name="search-by">
+        <option value="SelectOption">Select Option</option>
+        <option value="title">Title</option>
+        <option value="genre">Genre</option>
+        <option value="both">Both</option>
+    </select>
+
+    <label for="title"> Title </label>
+    <input type="text" placeholder="Type Title Of Your Movie" id="title">
+    <label for="title"> Genre </label>
+    <input type="text" placeholder="Type Genere Of Your Movie" id="genre">
+    <button onclick=search()>Search</button>
+    <button onclick=sortByTitle()>Sort By Title</button>
+    <button onclick=sortByGenre()>Sort By Genre</button>
+    <ul id="results"></ul>
+    <ul id="list"></ul>
+</body>
+
+<script src="./script.js"></script>
+
+</html>
